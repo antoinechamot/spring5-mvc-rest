@@ -26,7 +26,8 @@ public class SwaggerConfig extends WebMvcConfigurationSupport{
 				.select()
 				.apis(RequestHandlerSelectors.any())
 				.build()
-				.pathMapping("/");
+				.pathMapping("/")
+				.apiInfo(metaData());
 	}
 	
 	
